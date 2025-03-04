@@ -63,12 +63,14 @@
     </header>
     <div class="contact-section">
         <h2>We'd love to hear from you</h2>
-        <form action="#">
+        <div action="#">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+            <textarea rows="5" id="message-val" placeholder="Your Message" required></textarea>
+            <button type="submit" id="messageBtn">Send Message</button>
+        </div> 
     </div>
+
+    <script type="module" src="./send_message.js"></script>
 </body>
 </html>

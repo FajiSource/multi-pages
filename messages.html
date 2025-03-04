@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Assessment of Emotional Intelligence</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #4CAF50;
+            color: white;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header div a {
+            color: white;
+            text-decoration: none;
+            background: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        header div a:hover {
+            background: #555;
+        }
+
+        .side-nav {
+            width: 200px;
+            background: #2E8B57;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 70px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav ul li {
+            margin: 1rem 0;
+        }
+
+        .side-nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.8rem 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .side-nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            margin-left: 220px;
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            background: #333;
+            color: white;
+            margin-top: auto;
+        }
+
+        .message {
+            background: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .message h3 {
+            margin-top: 0;
+        }
+
+        .message:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            .side-nav {
+                width: 100%;
+                padding-top: 1rem;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 1rem;
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Assessment of Emotional Intelligence</h1>
+        <div>
+            <a href="./welcome.html">Log Out</a>
+        </div>
+    </header>
+
+    <nav class="side-nav">
+        <ul>    
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./messages.html">Messages</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Inbox</h2>
+        <div class="message">
+            <h3>Message from Anonymouse</h3>
+            <p>Did you know? Drinking water can improve your skin health and help maintain body temperature.</p>
+        </div>
+        <div class="message">
+            <h3>Message from Anonymouse</h3>
+            <p>Take breaks! Sitting for long periods can negatively affect your posture and circulation.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Assessment of Emotional Intelligence. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

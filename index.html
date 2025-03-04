@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment of Emotional Intelligence</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* Ensure the body takes full height of the viewport */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #4CAF50;
+            color: white;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header div a {
+            color: white;
+            text-decoration: none;
+            background: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        header div a:hover {
+            background: #555;
+        }
+
+        .side-nav {
+            width: 200px;
+            background: #2E8B57;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 70px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side-nav ul li {
+            margin: 1rem 0;
+        }
+
+        .side-nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.8rem 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .side-nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            margin-left: 220px;
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1px;
+            font-size: .7rem;
+            background: #333;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Styling for the link box */
+        .link-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 2rem auto;
+            width: 300px;
+        }
+
+        .link-box p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .link-box button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-box button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Assessment of Emotional Intelligence</h1>
+        <div>
+            <a href="welcome.html">Log Out</a>
+        </div>
+    </header>
+    <nav class="side-nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./messages.html">Messages</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="link-box">
+            <p>Send a message to me</p>
+            <button>Copy my link</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Assessment of Emotional Intelligence. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -66,14 +66,56 @@
 <body>
     <div class="container">
         <h1>Sign Up</h1>
-        <form action="#">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
+        <form id="signupForm">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
             <button type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="./signin.html">Sign In</a></p>
+        <p id="message"></p>
     </div>
+
+    <script type="module">
+        import { sign_up } from "./data.js"; 
+
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirmPassword").value.trim();
+            const messageBox = document.getElementById("message");
+
+            if (password !== confirmPassword) {
+                messageBox.textContent = "Passwords do not match!";
+                messageBox.style.color = "red";
+                return;
+            }
+
+            const result = sign_up(fullname, email, password);
+            if (result === "Email already registered.") {
+                messageBox.textContent = result;
+                messageBox.style.color = "red";
+            } else {
+                messageBox.textContent = "Sign-up successful! Redirecting...";
+                messageBox.style.color = "green";
+                setTimeout(() => {
+                    window.location.href = "./signin.html";
+                }, 1500);
+            }
+        });
+    </script>
+     <script type="module">
+        import {get_user} from './data.js';
+        const user = get_user() || null;
+       
+        if(user){
+            document.location.href = "./index.html";
+        }
+    </script>
 </body>
+
 </html>

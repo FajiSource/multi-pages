@@ -72,5 +72,13 @@
     </div>
 
     <script type="module" src="./send_message.js"></script>
+    <script type="module">
+        import {get_user} from './data.js';
+        const user = get_user() || null;
+       
+        if(user){
+            document.location.href = "./index.html";
+        }
+    </script>
 </body>
 </html>

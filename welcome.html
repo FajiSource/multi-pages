@@ -146,5 +146,13 @@
     <footer>
         <p>&copy; 2024 Assessment of Emotional Intelligence. All rights reserved.</p>
     </footer>
+    <script type="module">
+        import {get_user} from './data.js';
+        const user = get_user() || null;
+       
+        if(user){
+            document.location.href = "./index.html";
+        }
+    </script>
 </body>
 </html>

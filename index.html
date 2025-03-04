@@ -130,7 +130,7 @@
     <header>
         <h1>Assessment of Emotional Intelligence</h1>
         <div>
-            <a href="welcome.html">Log Out</a>
+            <a href="welcome.html" id="logout-btn">Log Out</a>
         </div>
     </header>
     <nav class="side-nav">
@@ -149,6 +149,22 @@
     <footer>
         <p>&copy; 2024 Assessment of Emotional Intelligence. All rights reserved.</p>
     </footer>
+    <script type="module">
+        import {get_user} from './data.js';
+        const user = get_user() || null;
+      
+        if(!user){
+            document.location.href = "./signin.html";
+        }
+    </script>
+
+    <script type="module">
+        import {logout} from './data.js';
+        const btn = document.getElementById("logout-btn");
+        btn.onclick = () => {
+            logout();
+        };
+    </script>
 </body>
 
 </html>

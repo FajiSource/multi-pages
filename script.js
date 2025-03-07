@@ -9,7 +9,7 @@ get_message().forEach(message => {
     container.classList.add("message");
     container.innerHTML = `
              <div class="message">
-                <h3>Message from Anonymouse</h3>
+                <h3>Message from anonymous</h3>
                 <p>${message}</p>
             </div>
         `;
